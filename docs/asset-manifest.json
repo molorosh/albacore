@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/albacore/static/css/main.94f6e368.chunk.css",
-    "main.js": "/albacore/static/js/main.a5ae95d7.chunk.js",
-    "main.js.map": "/albacore/static/js/main.a5ae95d7.chunk.js.map",
+    "main.js": "/albacore/static/js/main.439920f2.chunk.js",
+    "main.js.map": "/albacore/static/js/main.439920f2.chunk.js.map",
     "runtime-main.js": "/albacore/static/js/runtime-main.d6df58d2.js",
     "runtime-main.js.map": "/albacore/static/js/runtime-main.d6df58d2.js.map",
     "static/js/2.2a6e0b4e.chunk.js": "/albacore/static/js/2.2a6e0b4e.chunk.js",
     "static/js/2.2a6e0b4e.chunk.js.map": "/albacore/static/js/2.2a6e0b4e.chunk.js.map",
     "index.html": "/albacore/index.html",
-    "precache-manifest.737c4646e0ce2a325d65f9a9a3816959.js": "/albacore/precache-manifest.737c4646e0ce2a325d65f9a9a3816959.js",
+    "precache-manifest.5ce284abff3be8081e1595a0d3ce11b2.js": "/albacore/precache-manifest.5ce284abff3be8081e1595a0d3ce11b2.js",
     "service-worker.js": "/albacore/service-worker.js",
     "static/css/main.94f6e368.chunk.css.map": "/albacore/static/css/main.94f6e368.chunk.css.map",
     "static/js/2.2a6e0b4e.chunk.js.LICENSE.txt": "/albacore/static/js/2.2a6e0b4e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d6df58d2.js",
     "static/js/2.2a6e0b4e.chunk.js",
     "static/css/main.94f6e368.chunk.css",
-    "static/js/main.a5ae95d7.chunk.js"
+    "static/js/main.439920f2.chunk.js"
   ]
 }
