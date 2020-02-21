@@ -1,3 +1,8 @@
+# albacore : 鬢長 (びんなが)
+
+This is a prototype for creating a web app that will allow online and offline writing in Japanese 
+that is as close as possible to the experience of using Genko Yoshi.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +71,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
