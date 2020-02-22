@@ -18,7 +18,10 @@ class ChoiceButton extends Component{
         }
         // using an ES6 string literal `Hello ${Surname}.`
         return (
-            <button className={`Choice-button ${extraClass}`}>
+            <button 
+                className={`Choice-button ${extraClass}`}
+                onClick={this.props.handleClick}
+                >
                 {this.props.text}
             </button>
         );

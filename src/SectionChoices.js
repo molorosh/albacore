@@ -6,26 +6,32 @@ class SectionChoices extends Component {
         super(props);
     }
 
+    handleClick(newMode){
+        // we will pass this to the parent object to propogate
+        this.props.handleChangeSection(newMode);
+    }
+
     render(){
         return (
             <section className="App-section-choices">
                 <p>
-                    Selected: <b>{this.props.mode}</b>
-                    
                     <ChoiceButton 
-                        mode={this.props.mode} 
-                        value='intro' 
-                        text='Intro'
+                        handleClick={() => this.handleClick("intro")}
+                        mode={this.props.mode}  
+                        value="intro"
+                        text="Intro"
                         />
                     <ChoiceButton 
+                        handleClick={() => this.handleClick("issues")}
                         mode={this.props.mode} 
-                        value='issues' 
-                        text='Issues'
+                        value="issues"
+                        text="Issues"
                         />
                     <ChoiceButton 
-                        mode={this.props.mode} 
-                        value='proto01' 
-                        text='Proto I'
+                        handleClick={() => this.handleClick("proto1")}
+                        mode={this.props.mode}
+                        value="proto1" 
+                        text="Proto I"
                         />
                 </p>
             </section>

@@ -11,8 +11,14 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      mode: 'issues',
+      mode: 'intro',
     };
+  }
+
+  handleChangeSection(newMode){
+    this.setState({
+      mode: newMode,
+    });
   }
 
   render() {    
@@ -34,7 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <SectionChoices mode={this.state.mode} />
+        <SectionChoices handleChangeSection={(a) => this.handleChangeSection(a)} mode={this.state.mode} />
         {section}
         <Footer />
       </div>

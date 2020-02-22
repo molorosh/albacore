@@ -4,14 +4,16 @@ function Footer() {
     return (
         <footer className="App-footer">
           <p>
-            <a
+           <span>
+             Powered by <a
               className="App-link"
               href="https://reactjs.org"
               target="_blank"
               rel="noopener noreferrer"
-            >
-            Learn React
-            </a>
+              >
+                React
+              </a>
+            </span>
           </p>
         </footer>
     );
