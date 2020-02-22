@@ -28,10 +28,10 @@ class SectionChoices extends Component {
                         text="Issues"
                         />
                     <ChoiceButton 
-                        handleClick={() => this.handleClick("proto1")}
+                        handleClick={() => this.handleClick("protoAlpha")}
                         mode={this.props.mode}
-                        value="proto1" 
-                        text="Proto I"
+                        value="protoAlpha" 
+                        text="Proto: ἄλφα"
                         />
                 </p>
             </section>

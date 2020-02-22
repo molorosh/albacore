@@ -5,6 +5,7 @@ import SectionBlank from './SectionBlank';
 import SectionChoices from './SectionChoices';
 import SectionIntro from './SectionIntro';
 import SectionIssues from './SectionIssues';
+import SectionProtoAlpha from './SectionProtoAlpha';
 import Footer from './Footer';
 
 class App extends Component {
@@ -30,8 +31,8 @@ class App extends Component {
       case "intro":
         section = <SectionIntro/>;
       break;
-      case "proto1":
-        section = <SectionBlank/>;
+      case "protoAlpha":
+        section = <SectionProtoAlpha/>;
       break;
       default:
         section = <SectionBlank/>;

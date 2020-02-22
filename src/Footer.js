@@ -11,7 +11,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               >
-                React
+                React.js
               </a>
             </span>
           </p>

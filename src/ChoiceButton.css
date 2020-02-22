@@ -1,14 +1,22 @@
 
 .Choice-button {
-    font-family: monospace;
-    padding: 5px;
     margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 32px;
+    cursor: pointer;
 }
 
 .Choice-button-selected {
-    color: black;
+    color: white;
+    background-color: black;
+    font-weight: bold;
 }
 
 .Choice-button-not-selected {
-    color: red;
+    color: black;
+    background-color: white;
 }

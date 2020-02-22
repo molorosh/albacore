@@ -16,23 +16,35 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 1.2vmin);
   color: white;
+}
+
+.App-header ruby {
+  color: white;
+}
+
+.App-header ruby rt {
+  color: silver;
+}
+
+.App-header img {
+  margin-right: 20px;
 }
 
 .App-footer {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 0vmin);
   color: white;
 }
 
