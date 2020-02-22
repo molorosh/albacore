@@ -1,0 +1,14 @@
+
+.Choice-button {
+    font-family: monospace;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.Choice-button-selected {
+    color: black;
+}
+
+.Choice-button-not-selected {
+    color: red;
+}
