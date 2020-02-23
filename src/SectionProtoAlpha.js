@@ -5,6 +5,7 @@ class SectionProtoAlpha extends Component{
     super(props);
     // these are added to properly register the scope of 'this' in the methods
     this.createDocClick = this.createDocClick.bind(this);
+    this.doAction = this.doAction.bind(this);
   }
 
   createDocClick(){
@@ -16,6 +17,12 @@ class SectionProtoAlpha extends Component{
     let size = sizeElement.options[sizeElement.selectedIndex].value;
     this.props.createAlphaDoc(isVertical, size, title);
   }
+
+  doAction(){
+    let newTextElement = document.getElementById('protoAlphaNewTextEdit');
+    let newText = newTextElement.value;
+    alert("doAction(「" + newText + "」)");
+    }
 
   render(){
     let doc = this.props.doc;
@@ -70,6 +77,15 @@ class SectionProtoAlpha extends Component{
           <span className="propertySpanValue">{this.props.doc.createdUnixTime}</span>
         </span>
       </p>
+      <p>
+          <span className="formLabel">New Text:</span>
+          <input 
+            type="text" id="protoAlphaNewTextEdit"
+            />
+        </p>
+        <p>
+          <button className="formButton formButtonAction" onClick={this.doAction}>Action</button>
+        </p>
     </div>;
     }
     return (
