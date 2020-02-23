@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/albacore/precache-manifest.d85bd43765eb8847448e8d162f4b7a73.js"
+  "/albacore/precache-manifest.97fa881fd806982f6804c274c5b298df.js"
 );
 
 self.addEventListener('message', (event) => {

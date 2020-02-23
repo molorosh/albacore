@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/albacore/static/css/main.261fafcb.chunk.css",
-    "main.js": "/albacore/static/js/main.37521a89.chunk.js",
-    "main.js.map": "/albacore/static/js/main.37521a89.chunk.js.map",
+    "main.css": "/albacore/static/css/main.619b3394.chunk.css",
+    "main.js": "/albacore/static/js/main.4c878b0c.chunk.js",
+    "main.js.map": "/albacore/static/js/main.4c878b0c.chunk.js.map",
     "runtime-main.js": "/albacore/static/js/runtime-main.d6df58d2.js",
     "runtime-main.js.map": "/albacore/static/js/runtime-main.d6df58d2.js.map",
     "static/js/2.9ee5b871.chunk.js": "/albacore/static/js/2.9ee5b871.chunk.js",
     "static/js/2.9ee5b871.chunk.js.map": "/albacore/static/js/2.9ee5b871.chunk.js.map",
     "index.html": "/albacore/index.html",
-    "precache-manifest.d85bd43765eb8847448e8d162f4b7a73.js": "/albacore/precache-manifest.d85bd43765eb8847448e8d162f4b7a73.js",
+    "precache-manifest.97fa881fd806982f6804c274c5b298df.js": "/albacore/precache-manifest.97fa881fd806982f6804c274c5b298df.js",
     "service-worker.js": "/albacore/service-worker.js",
-    "static/css/main.261fafcb.chunk.css.map": "/albacore/static/css/main.261fafcb.chunk.css.map",
+    "static/css/main.619b3394.chunk.css.map": "/albacore/static/css/main.619b3394.chunk.css.map",
     "static/js/2.9ee5b871.chunk.js.LICENSE.txt": "/albacore/static/js/2.9ee5b871.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/albacore/static/media/logo.d9548c30.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d6df58d2.js",
     "static/js/2.9ee5b871.chunk.js",
-    "static/css/main.261fafcb.chunk.css",
-    "static/js/main.37521a89.chunk.js"
+    "static/css/main.619b3394.chunk.css",
+    "static/js/main.4c878b0c.chunk.js"
   ]
 }
