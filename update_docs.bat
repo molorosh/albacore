@@ -1,3 +1,4 @@
+npm run build
 cd docs
 DEL /F/Q/S *.* > NUL
 rmdir /Q /S static
