@@ -49,7 +49,8 @@ class SectionProtoAlpha extends Component{
         <p>
           <span className="formLabel">Title:</span>
           <input 
-            type="text" id="protoAlphaTitleCreate"
+            type="text" 
+            id="protoAlphaTitleCreate"
             />
         </p>
         <p>
@@ -57,8 +58,9 @@ class SectionProtoAlpha extends Component{
         </p>
       </div>;
     }else{
+      let orientText = this.props.doc.isVertical === "true" ? "Vertical" : "Horizontal";
       // the EDIT mode
-      ux = <div>
+      ux = <div> 
       <p>
         <span className="propertySpan">
           <span className="propertySpanLabel">Size:</span> 
@@ -66,7 +68,7 @@ class SectionProtoAlpha extends Component{
         </span>
         <span className="propertySpan">
           <span className="propertySpanLabel">Orientation:</span> 
-          <span className="propertySpanValue">{this.props.doc.isVertical}</span>
+          <span className="propertySpanValue">{orientText}</span>
         </span>
         <span className="propertySpan">
           <span className="propertySpanLabel">Title:</span> 
