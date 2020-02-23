@@ -1,0 +1,38 @@
+/* filename: AppForm.css */
+
+.formLabel {
+    color: navy;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.propertySpan{
+    margin-left: 5px;
+}
+
+.propertySpanLabel {
+    color: slategray;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.propertySpanValue {
+    color: navy;
+}
+
+.formButton {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.formButtonSubmit{
+    color: white;
+    background-color: mediumseagreen;
+    border: 1px solid green;
+}

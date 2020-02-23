@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import CodeDoc from './CodeDoc';
 import './App.css';
+import './AppForm.css';
 import Header from './Header';
 import SectionBlank from './SectionBlank';
 import SectionChoices from './SectionChoices';
@@ -13,7 +15,18 @@ class App extends Component {
     super(props);
     this.state = {
       mode: 'intro',
+      alphaDoc: null,
     };
+    // these are added to properly register the scope of 'this' in the methods
+    this.createAlphaDoc = this.createAlphaDoc.bind(this);
+  }
+
+  createAlphaDoc(isVertical, spanSize, title)
+  {
+    let doc = new CodeDoc(isVertical, spanSize, title);
+    this.setState({
+      alphaDoc: doc,
+    });
   }
 
   handleChangeSection(newMode){
@@ -32,7 +45,7 @@ class App extends Component {
         section = <SectionIntro/>;
       break;
       case "protoAlpha":
-        section = <SectionProtoAlpha/>;
+        section = <SectionProtoAlpha createAlphaDoc={this.createAlphaDoc} doc={this.state.alphaDoc}/>;
       break;
       default:
         section = <SectionBlank/>;

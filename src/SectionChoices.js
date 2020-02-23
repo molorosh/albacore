@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import ChoiceButton from './ChoiceButton';
 
 class SectionChoices extends Component {
-    constructor(props){
-        super(props);
-    }
 
     handleClick(newMode){
         // we will pass this to the parent object to propogate
