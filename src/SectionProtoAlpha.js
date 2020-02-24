@@ -21,7 +21,8 @@ class SectionProtoAlpha extends Component{
   doAction(){
     let newTextElement = document.getElementById('protoAlphaNewTextEdit');
     let newText = newTextElement.value;
-    alert("doAction(「" + newText + "」)");
+    console.log("SectionProtoAlpha(「" + newText + "」)")
+    this.props.appendAlphaDoc(newText);
     }
 
   render(){
@@ -43,12 +44,11 @@ class SectionProtoAlpha extends Component{
             <option value={10}>10</option>
             <option value={20}>20</option>
             <option value={30}>30</option>
-            <option value={40}>40</option>
           </select>
         </p>
         <p>
           <span className="formLabel">Title:</span>
-          <input 
+          <input defaultValue={"the doc title"}
             type="text" 
             id="protoAlphaTitleCreate"
             />
@@ -88,6 +88,13 @@ class SectionProtoAlpha extends Component{
         <p>
           <button className="formButton formButtonAction" onClick={this.doAction}>Action</button>
         </p>
+        <p>
+          <span className="propertySpan">
+            <span className="propertySpanLabel">CreatedUnixTime:</span> 
+            <span className="propertySpanValue">{this.props.doc.updatedUnixTime}</span>
+          </span>
+        </p>
+        <pre className="preDebug">{this.props.doc.debugPreview}</pre>
     </div>;
     }
     return (

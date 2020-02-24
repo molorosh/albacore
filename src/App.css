@@ -94,4 +94,10 @@
   }
 }
 
-
+pre.preDebug {
+  margin: 2px;
+  border: 1px solid yellow;
+  color: yellow;
+  background-color: black;
+  padding: 2px;
+}

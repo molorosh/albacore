@@ -16,9 +16,11 @@ class App extends Component {
     this.state = {
       mode: 'intro',
       alphaDoc: null,
+      updated: null,
     };
     // these are added to properly register the scope of 'this' in the methods
     this.createAlphaDoc = this.createAlphaDoc.bind(this);
+    this.appendAlphaDoc = this.appendAlphaDoc.bind(this);
   }
 
   createAlphaDoc(isVertical, spanSize, title)
@@ -27,6 +29,12 @@ class App extends Component {
     this.setState({
       alphaDoc: doc,
     });
+  }
+
+  appendAlphaDoc(newText)
+  {
+    this.state.alphaDoc.append(newText);
+    this.setState({updated: this.state.alphaDoc.updatedUnixTime});
   }
 
   handleChangeSection(newMode){
@@ -45,7 +53,7 @@ class App extends Component {
         section = <SectionIntro/>;
       break;
       case "protoAlpha":
-        section = <SectionProtoAlpha createAlphaDoc={this.createAlphaDoc} doc={this.state.alphaDoc}/>;
+        section = <SectionProtoAlpha updated={this.state.updated} appendAlphaDoc={this.appendAlphaDoc} createAlphaDoc={this.createAlphaDoc} doc={this.state.alphaDoc}/>;
       break;
       default:
         section = <SectionBlank/>;
