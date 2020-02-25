@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "986e0cd140d1dc602c6b7e4600e3aaa7",
+    "revision": "80006c88604841de608ca30bc09eac79",
     "url": "/albacore/index.html"
   },
   {
-    "revision": "50c01de6fdd0e5b598af",
-    "url": "/albacore/static/css/main.619b3394.chunk.css"
+    "revision": "21ac91013cc4bdf16a7a",
+    "url": "/albacore/static/css/main.3902a4fd.chunk.css"
   },
   {
     "revision": "c7255ca4695da73a5f9a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/albacore/static/js/2.9ee5b871.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50c01de6fdd0e5b598af",
-    "url": "/albacore/static/js/main.c530b6b9.chunk.js"
+    "revision": "21ac91013cc4bdf16a7a",
+    "url": "/albacore/static/js/main.8223e920.chunk.js"
   },
   {
     "revision": "aa389085dcd86260fd07",
