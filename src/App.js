@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import CodeDoc from './CodeDoc';
 import './App.css';
 import './AppForm.css';
+// boostrap stuff (start)
+import 'bootstrap/dist/css/bootstrap.min.css'
+// boostrap stuff (end)
 import Header from './Header';
 import SectionBlank from './SectionBlank';
 import SectionChoices from './SectionChoices';
@@ -9,6 +12,7 @@ import SectionIntro from './SectionIntro';
 import SectionIssues from './SectionIssues';
 import SectionProtoAlpha from './SectionProtoAlpha';
 import Footer from './Footer';
+
 
 class App extends Component {
   constructor(props){
