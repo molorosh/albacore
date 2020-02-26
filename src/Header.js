@@ -1,16 +1,59 @@
-import React from 'react';
-import fish from './hsif.png';
+import React, { Component } from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-function Header() {
+class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      collapsed: true,  
+    };
+    // these are added to properly register the scope of 'this' in the methods
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  toggleNavbar(){
+    this.setState({ collapsed: !this.state.collapsed});
+  }
+
+  handleClick(newMode){
+    // we will pass this to the parent object to propogate
+    this.toggleNavbar();
+    this.props.handleChangeSection(newMode);
+  }
+
+  render(){
     return (
-        <header className="App-header">
-          <h1>
-            <img src={fish} alt="an albacore fish"/>
-            <ruby>鬢長 <rp>(</rp><rt>びんなが</rt><rp>)</rp></ruby>
-          </h1>
-        </header>
+      <div>
+      <Navbar color="dark" dark>
+        <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+        <NavbarBrand href="/" className="mr-auto">albacore</NavbarBrand>
+        <Collapse isOpen={!this.state.collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink
+               className="menuClick"
+               onClick={() => this.handleClick("intro")}
+               >Intro</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="menuClick"
+                onClick={() => this.handleClick("issues")} 
+               >Issues</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="menuClick"
+                onClick={() => this.handleClick("protoAlpha")} 
+               >Proto: ἄλφα</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
     );
+  }
 }
-
 
 export default Header;
