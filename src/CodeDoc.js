@@ -11,6 +11,23 @@ class CodeDoc
         this.title = title;
         this.EMPTY_VALUE = "{empty}";
         this.debugPreview = this.EMPTY_VALUE;
+        this.characterStream = "";
+    }
+
+    calculateDebugPreview(){
+        this.debugPreview = "";
+        let length = this.characterStream.length();
+        let row = 0;
+        for(let x = 1; x < length, x++){
+            this.debugPreview += this.characterStream[x];
+            if(row >= this.spanSize){
+                this.debugPreview += "<br/>";
+            }
+            row += 1;
+            if(row == this.spanSize){
+                row = 0;
+            }
+        }
     }
 
     append(newText){
@@ -24,10 +41,13 @@ class CodeDoc
         }else{
             let dt = new Date();
             if(this.debugPreview === this.EMPTY_VALUE){
-                this.debugPreview = newText;
+                //this.debugPreview = newText;
+                this.characterStream = newText;
             }else{
-                this.debugPreview += newText;
+                //this.debugPreview += newText;
+                this.characterStream += newText;
             }
+            this.calculateDebugPreview();
             this.updatedUnixTime = dt.getTime();
             console.log("CodeDoc.app(...) added " + newText);
         }
