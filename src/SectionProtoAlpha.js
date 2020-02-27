@@ -22,6 +22,7 @@ class SectionProtoAlpha extends Component{
     let newTextElement = document.getElementById('protoAlphaNewTextEdit');
     let newText = newTextElement.value;
     console.log("SectionProtoAlpha(「" + newText + "」)")
+    document.getElementById('protoAlphaNewTextEdit').value = "";
     this.props.appendAlphaDoc(newText);
     }
 

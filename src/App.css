@@ -1,51 +1,13 @@
-.App {
-  text-align: center;
+html, body {
   background-color: #a8aaaf;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  background-color: #a8aaaf;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 8vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(8px + 1.2vmin);
-  color: white;
-}
-
-.App-header ruby {
-  color: white;
-}
-
-.App-header ruby rt {
-  color: silver;
-}
-
-.App-header img {
-  margin-right: 20px;
-}
-
-.App-footer {
-  background-color: #282c34;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 0vmin);
-  color: white;
+.menuClick {
+ cursor: pointer;
 }
 
 .App-section {
@@ -53,45 +15,15 @@
   margin-left: 20vw;  
   margin-right: 20vw;
   min-height: 80vh;
-  /*display: flex;*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 1vmin);
   color: rgb(48, 45, 45);
-}
-
-.App-section-choices {
-  background-color: #77787a;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 20vw;  
-  margin-right: 20vw;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1vmin);
-  color: rgb(48, 45, 45);
-}
-
-.App-section-hr {
-  border: 2px dashed navy;
-  border-radius: 5px;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 pre.preDebug {

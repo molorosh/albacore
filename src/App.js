@@ -7,12 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // boostrap stuff (end)
 import Header from './Header';
 import SectionBlank from './SectionBlank';
-import SectionChoices from './SectionChoices';
 import SectionIntro from './SectionIntro';
 import SectionIssues from './SectionIssues';
 import SectionProtoAlpha from './SectionProtoAlpha';
-import Footer from './Footer';
-
 
 class App extends Component {
   constructor(props){
@@ -25,6 +22,7 @@ class App extends Component {
     // these are added to properly register the scope of 'this' in the methods
     this.createAlphaDoc = this.createAlphaDoc.bind(this);
     this.appendAlphaDoc = this.appendAlphaDoc.bind(this);
+    this.handleChangeSection = this.handleChangeSection.bind(this);
   }
 
   createAlphaDoc(isVertical, spanSize, title)
@@ -65,10 +63,10 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <Header />
-        <SectionChoices handleChangeSection={(a) => this.handleChangeSection(a)} mode={this.state.mode} />
+        <Header
+          handleChangeSection={(a) => this.handleChangeSection(a)} mode={this.state.mode}
+          />
         {section}
-        <Footer />
       </div>
     );
   }
