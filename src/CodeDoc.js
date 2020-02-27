@@ -16,22 +16,29 @@ class CodeDoc
 
     calculateDebugPreview(){
         this.debugPreview = "";
-        let length = this.characterStream.length();
+        let length = this.characterStream.length;
         let row = 0;
-        for(let x = 1; x < length, x++){
-            this.debugPreview += this.characterStream[x];
-            if(row >= this.spanSize){
-                this.debugPreview += "<br/>";
-            }
-            row += 1;
-            if(row == this.spanSize){
+        let max = this.spanSize - 1;
+        console.log("length = " + length);
+        console.log("max = " + max);
+        console.log("row = " + row);
+        for(let x = 0; x < length; x++){
+            console.log("x = " + x);
+            console.log("row = " + row);
+            this.debugPreview += this.characterStream.charAt(x);
+            if(row >= max){
+                this.debugPreview += "\n";
+                console.log("NEWLINE");
                 row = 0;
+            }else{
+                row += 1;
             }
+            
         }
     }
 
     append(newText){
-        console.log("CodeDoc.app(" + newText + ")");
+        console.log("CodeDoc.append(" + newText + ")");
         if(newText === null){
             console.log("CodeDoc.app(...) is null ");
         }else if(newText === undefined){
